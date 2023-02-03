@@ -1,0 +1,913 @@
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 26, 2023 - 17:38:39
+Django version 4.1.5, using settings 'backend.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py", line 47, in get_internal_wsgi_application
+    return import_string(app_path)
+  File "/usr/local/lib/python3.10/dist-packages/django/utils/module_loading.py", line 30, in import_string
+    return cached_import(module_path, class_name)
+  File "/usr/local/lib/python3.10/dist-packages/django/utils/module_loading.py", line 15, in cached_import
+    module = import_module(module_path)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/address_cleanser_django/jamnav-proto/backend/backend/wsgi.py", line 11, in <module>
+    from whitenoise import WhiteNoise
+ModuleNotFoundError: No module named 'whitenoise'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.10/threading.py", line 953, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/django/core/management/commands/runserver.py", line 157, in inner_run
+    handler = self.get_handler(*args, **options)
+  File "/usr/local/lib/python3.10/dist-packages/django/contrib/staticfiles/management/commands/runserver.py", line 31, in get_handler
+    handler = super().get_handler(*args, **options)
+  File "/usr/local/lib/python3.10/dist-packages/django/core/management/commands/runserver.py", line 78, in get_handler
+    return get_internal_wsgi_application()
+  File "/usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py", line 49, in get_internal_wsgi_application
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: WSGI application 'backend.wsgi.application' could not be loaded; Error importing module.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 26, 2023 - 17:49:50
+Django version 4.1.5, using settings 'backend.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Error: That port is already in use.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 26, 2023 - 20:20:51
+Django version 4.1.5, using settings 'backend.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 26, 2023 - 20:23:16
+Django version 4.1.5, using settings 'backend.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+[26/Jan/2023 20:24:07] "GET /admin/ HTTP/1.1" 200 6560
+[26/Jan/2023 20:24:21] "GET /admin/ HTTP/1.1" 200 6560
+[26/Jan/2023 20:24:22] "GET /admin/ HTTP/1.1" 200 6560
+[26/Jan/2023 20:24:49] "GET /admin/ HTTP/1.1" 302 0
+[26/Jan/2023 20:24:50] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 2215
+Not Found: /apple-touch-icon-precomposed.png
+[26/Jan/2023 20:24:50] "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 2288
+Not Found: /apple-touch-icon.png
+[26/Jan/2023 20:24:50] "GET /apple-touch-icon.png HTTP/1.1" 404 2252
+Not Found: /favicon.ico
+[26/Jan/2023 20:24:51] "GET /favicon.ico HTTP/1.1" 404 2225
+Not Found: /apple-touch-icon-precomposed.png
+[26/Jan/2023 20:24:51] "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 2288
+Not Found: /apple-touch-icon.png
+[26/Jan/2023 20:24:51] "GET /apple-touch-icon.png HTTP/1.1" 404 2252
+Not Found: /favicon.ico
+[26/Jan/2023 20:24:51] "GET /favicon.ico HTTP/1.1" 404 2225
+[26/Jan/2023 20:24:51] "GET /admin/ HTTP/1.1" 302 0
+[26/Jan/2023 20:24:52] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 2215
+Not Found: /apple-touch-icon-precomposed.png
+[26/Jan/2023 20:24:52] "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 2288
+Not Found: /apple-touch-icon.png
+[26/Jan/2023 20:24:52] "GET /apple-touch-icon.png HTTP/1.1" 404 2252
+Not Found: /favicon.ico
+[26/Jan/2023 20:24:52] "GET /favicon.ico HTTP/1.1" 404 2225
+Not Found: /apple-touch-icon-precomposed.png
+[26/Jan/2023 20:24:53] "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 2288
+Not Found: /apple-touch-icon.png
+[26/Jan/2023 20:24:53] "GET /apple-touch-icon.png HTTP/1.1" 404 2252
+Not Found: /favicon.ico
+[26/Jan/2023 20:24:53] "GET /favicon.ico HTTP/1.1" 404 2225
+Not Found: /
+[26/Jan/2023 20:25:10] "GET / HTTP/1.1" 404 2170
+Not Found: /
+[26/Jan/2023 20:25:11] "GET / HTTP/1.1" 404 2170
+Not Found: /a
+[26/Jan/2023 20:25:11] "GET /a HTTP/1.1" 404 2191
+Not Found: /adm
+[26/Jan/2023 20:25:12] "GET /adm HTTP/1.1" 404 2197
+[26/Jan/2023 20:25:12] "GET /admin HTTP/1.1" 301 0
+[26/Jan/2023 20:25:12] "GET /admin/ HTTP/1.1" 302 0
+[26/Jan/2023 20:25:12] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 2215
+[26/Jan/2023 20:25:13] "GET /admin HTTP/1.1" 301 0
+[26/Jan/2023 20:25:13] "GET /admin/ HTTP/1.1" 302 0
+[26/Jan/2023 20:25:13] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 2215
+[26/Jan/2023 20:25:20] "GET /admin HTTP/1.1" 301 0
+[26/Jan/2023 20:25:20] "GET /admin/ HTTP/1.1" 302 0
+[26/Jan/2023 20:25:20] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 2215
+[26/Jan/2023 20:25:20] "GET /static/admin/css/base.css HTTP/1.1" 200 20344
+[26/Jan/2023 20:25:20] "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 796
+[26/Jan/2023 20:25:21] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[26/Jan/2023 20:25:21] "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3763
+[26/Jan/2023 20:25:21] "GET /static/admin/css/responsive.css HTTP/1.1" 200 18854
+[26/Jan/2023 20:25:21] "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2619
+[26/Jan/2023 20:25:21] "GET /static/admin/css/login.css HTTP/1.1" 200 958
+[26/Jan/2023 20:25:21] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+[26/Jan/2023 20:25:21] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+[26/Jan/2023 20:25:46] "GET /admin/ HTTP/1.1" 302 0
+[26/Jan/2023 20:25:46] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 2215
+[26/Jan/2023 20:25:47] "GET /static/admin/css/base.css HTTP/1.1" 200 20344
+[26/Jan/2023 20:25:47] "GET /static/admin/css/responsive.css HTTP/1.1" 200 18854
+[26/Jan/2023 20:25:47] "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2619
+[26/Jan/2023 20:25:47] "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 796
+[26/Jan/2023 20:25:47] "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3763
+[26/Jan/2023 20:25:47] "GET /static/admin/css/login.css HTTP/1.1" 200 958
+[26/Jan/2023 20:25:47] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[26/Jan/2023 20:25:47] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+[26/Jan/2023 20:25:47] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+Not Found: /favicon.ico
+[26/Jan/2023 20:25:47] "GET /favicon.ico HTTP/1.1" 404 2225
+[26/Jan/2023 20:26:07] "GET /admin/base/user/ HTTP/1.1" 200 8186
+[26/Jan/2023 20:26:07] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 20:26:10] "GET /admin/ HTTP/1.1" 200 6560
+[26/Jan/2023 20:27:28] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 2215
+Not Found: /apple-touch-icon-120x120-precomposed.png
+[26/Jan/2023 20:27:28] "GET /apple-touch-icon-120x120-precomposed.png HTTP/1.1" 404 2312
+Not Found: /apple-touch-icon-120x120.png
+[26/Jan/2023 20:27:28] "GET /apple-touch-icon-120x120.png HTTP/1.1" 404 2276
+Not Found: /apple-touch-icon-precomposed.png
+[26/Jan/2023 20:27:29] "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 2288
+Not Found: /apple-touch-icon.png
+[26/Jan/2023 20:27:29] "GET /apple-touch-icon.png HTTP/1.1" 404 2252
+Not Found: /favicon.ico
+[26/Jan/2023 20:27:29] "GET /favicon.ico HTTP/1.1" 404 2225
+Not Found: /apple-touch-icon-120x120-precomposed.png
+[26/Jan/2023 20:27:29] "GET /apple-touch-icon-120x120-precomposed.png HTTP/1.1" 404 2312
+Not Found: /apple-touch-icon-120x120.png
+[26/Jan/2023 20:27:29] "GET /apple-touch-icon-120x120.png HTTP/1.1" 404 2276
+Not Found: /apple-touch-icon-precomposed.png
+[26/Jan/2023 20:27:29] "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 2288
+Not Found: /apple-touch-icon.png
+[26/Jan/2023 20:27:30] "GET /apple-touch-icon.png HTTP/1.1" 404 2252
+Not Found: /favicon.ico
+[26/Jan/2023 20:27:30] "GET /favicon.ico HTTP/1.1" 404 2225
+[26/Jan/2023 20:27:33] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+[26/Jan/2023 20:27:36] "GET /admin HTTP/1.1" 301 0
+[26/Jan/2023 20:27:36] "GET /admin/ HTTP/1.1" 200 6560
+[26/Jan/2023 20:27:36] "GET /static/admin/css/base.css HTTP/1.1" 200 20344
+[26/Jan/2023 20:27:36] "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 796
+[26/Jan/2023 20:27:36] "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2619
+[26/Jan/2023 20:27:36] "GET /static/admin/css/dashboard.css HTTP/1.1" 200 380
+[26/Jan/2023 20:27:36] "GET /static/admin/css/responsive.css HTTP/1.1" 200 18854
+[26/Jan/2023 20:27:36] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[26/Jan/2023 20:27:36] "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3763
+[26/Jan/2023 20:27:36] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[26/Jan/2023 20:27:36] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[26/Jan/2023 20:27:36] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+[26/Jan/2023 20:27:36] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+[26/Jan/2023 20:27:36] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+Not Found: /favicon.ico
+[26/Jan/2023 20:27:37] "GET /favicon.ico HTTP/1.1" 404 2221
+[26/Jan/2023 20:27:51] "POST /admin/logout/ HTTP/1.1" 200 1549
+[26/Jan/2023 20:27:52] "POST /admin/login/?next=/admin/ HTTP/1.1" 200 2371
+[26/Jan/2023 20:27:54] "GET /admin/ HTTP/1.1" 302 0
+[26/Jan/2023 20:27:54] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 2215
+[26/Jan/2023 20:27:54] "GET /static/admin/css/login.css HTTP/1.1" 200 958
+[26/Jan/2023 20:28:06] "POST /admin/login/?next=/admin/ HTTP/1.1" 200 2382
+[26/Jan/2023 20:28:12] "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[26/Jan/2023 20:28:12] "GET /admin/ HTTP/1.1" 200 6248
+Invalid HTTP_HOST header: 'www.zskillers.com'. You may need to add 'www.zskillers.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.10/dist-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/usr/local/lib/python3.10/dist-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/usr/local/lib/python3.10/dist-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'www.zskillers.com'. You may need to add 'www.zskillers.com' to ALLOWED_HOSTS.
+Bad Request: /
+[26/Jan/2023 20:28:45] "GET / HTTP/1.1" 400 65402
+[26/Jan/2023 20:32:18] "GET /admin/base/address/ HTTP/1.1" 200 31091
+[26/Jan/2023 20:32:18] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 20:32:20] "GET /admin/base/address/import/ HTTP/1.1" 200 7293
+[26/Jan/2023 20:32:20] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 20:32:32] "POST /admin/base/address/import/ HTTP/1.1" 200 7338
+[26/Jan/2023 20:32:32] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 20:32:38] "POST /admin/base/address/process_import/ HTTP/1.1" 302 0
+[26/Jan/2023 20:32:38] "GET /admin/base/address/ HTTP/1.1" 200 31248
+[26/Jan/2023 20:32:38] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 20:32:38] "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+[26/Jan/2023 20:33:02] "GET /admin/base/address/ HTTP/1.1" 200 31091
+[26/Jan/2023 20:33:02] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 20:33:03] "GET /admin/base/address/2000/change/ HTTP/1.1" 200 13044
+[26/Jan/2023 20:33:03] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 20:33:38] "GET /admin/base/address/ HTTP/1.1" 200 31091
+[26/Jan/2023 20:33:38] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 20:33:40] "GET /admin/base/address/import/ HTTP/1.1" 200 7293
+[26/Jan/2023 20:33:40] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 20:33:57] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 20:33:57] "POST /admin/base/address/import/ HTTP/1.1" 200 1271940
+[26/Jan/2023 20:36:54] "GET /admin/base/address/ HTTP/1.1" 200 31091
+[26/Jan/2023 20:36:54] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 20:36:56] "GET /admin/base/address/import/ HTTP/1.1" 200 7293
+[26/Jan/2023 20:36:56] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 20:37:05] "POST /admin/base/address/import/ HTTP/1.1" 200 7338
+[26/Jan/2023 20:37:05] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 20:42:41] "GET /admin/base/address/ HTTP/1.1" 200 31091
+[26/Jan/2023 20:42:41] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 20:42:43] "GET /admin/base/address/import/ HTTP/1.1" 200 7293
+[26/Jan/2023 20:42:43] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 20:42:48] "POST /admin/base/address/import/ HTTP/1.1" 200 8407
+[26/Jan/2023 20:42:49] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 20:42:59] "GET /admin/base/address/ HTTP/1.1" 200 31091
+[26/Jan/2023 20:42:59] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 20:43:00] "GET /admin/base/address/import/ HTTP/1.1" 200 7293
+[26/Jan/2023 20:43:00] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 20:43:13] "POST /admin/base/address/import/ HTTP/1.1" 200 7338
+[26/Jan/2023 20:43:13] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 20:45:20] "GET /admin/base/address/ HTTP/1.1" 200 31091
+[26/Jan/2023 20:45:20] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 20:45:22] "GET /admin/base/address/import/ HTTP/1.1" 200 7293
+[26/Jan/2023 20:45:22] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 20:45:54] "POST /admin/base/address/import/ HTTP/1.1" 200 1271940
+[26/Jan/2023 20:45:54] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 20:46:07] "GET /admin/base/address/ HTTP/1.1" 200 31091
+[26/Jan/2023 20:46:07] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+Not Found: /cleansefile
+[26/Jan/2023 21:01:37] "POST /cleansefile HTTP/1.1" 404 2226
+Not Found: /cleansefile/
+[26/Jan/2023 21:01:44] "POST /cleansefile/ HTTP/1.1" 404 2229
+[26/Jan/2023 21:02:23] "GET /admin/base/address/ HTTP/1.1" 200 31091
+[26/Jan/2023 21:02:23] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 21:03:35] "GET /admin/logout/ HTTP/1.1" 302 0
+[26/Jan/2023 21:03:35] "GET /admin/ HTTP/1.1" 302 0
+[26/Jan/2023 21:03:36] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 2215
+[26/Jan/2023 21:03:36] "GET /static/admin/css/base.css HTTP/1.1" 200 20344
+[26/Jan/2023 21:03:36] "GET /static/admin/css/responsive.css HTTP/1.1" 200 18854
+[26/Jan/2023 21:03:36] "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 796
+[26/Jan/2023 21:03:36] "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2619
+[26/Jan/2023 21:03:36] "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3763
+[26/Jan/2023 21:03:36] "GET /static/admin/css/login.css HTTP/1.1" 200 958
+[26/Jan/2023 21:03:36] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[26/Jan/2023 21:03:36] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+[26/Jan/2023 21:03:36] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+[26/Jan/2023 21:03:37] "GET /admin/ HTTP/1.1" 302 0
+[26/Jan/2023 21:03:37] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 2215
+Not Found: /cleansefile/
+[26/Jan/2023 21:03:49] "POST /cleansefile/ HTTP/1.1" 404 2221
+HERE
+HERE
+HERE
+[26/Jan/2023 21:04:31] "POST /api/cleansefile/ HTTP/1.1" 200 0
+HERE
+HERE
+HERE
+[26/Jan/2023 21:09:10] "POST /api/cleansefile/ HTTP/1.1" 200 0
+Not Found: /
+[26/Jan/2023 21:10:35] "GET / HTTP/1.1" 404 2166
+Not Found: /
+[26/Jan/2023 21:11:27] "GET / HTTP/1.1" 404 2170
+Not Found: /
+[26/Jan/2023 21:11:28] "GET / HTTP/1.1" 404 2170
+Not Found: /admi
+[26/Jan/2023 21:11:30] "GET /admi HTTP/1.1" 404 2200
+[26/Jan/2023 21:11:30] "GET /admin HTTP/1.1" 301 0
+[26/Jan/2023 21:11:30] "GET /admin/ HTTP/1.1" 302 0
+[26/Jan/2023 21:11:30] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 2215
+[26/Jan/2023 21:17:22] "GET /admin/base/address/ HTTP/1.1" 200 31090
+[26/Jan/2023 21:17:22] "GET /static/admin/css/changelists.css HTTP/1.1" 200 6395
+[26/Jan/2023 21:17:22] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 21:17:22] "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+[26/Jan/2023 21:17:22] "GET /static/admin/js/core.js HTTP/1.1" 200 5698
+[26/Jan/2023 21:17:22] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 8985
+[26/Jan/2023 21:17:23] "GET /static/admin/js/actions.js HTTP/1.1" 200 7872
+[26/Jan/2023 21:17:23] "GET /static/admin/js/urlify.js HTTP/1.1" 200 7902
+[26/Jan/2023 21:17:23] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 288580
+[26/Jan/2023 21:17:23] "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+[26/Jan/2023 21:17:23] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+[26/Jan/2023 21:17:23] "GET /static/admin/js/filters.js HTTP/1.1" 200 966
+[26/Jan/2023 21:17:23] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+[26/Jan/2023 21:17:32] "GET /admin/base/address/import/ HTTP/1.1" 200 7292
+[26/Jan/2023 21:17:32] "GET /static/admin/css/forms.css HTTP/1.1" 200 8944
+[26/Jan/2023 21:17:32] "GET /static/import_export/import.css HTTP/1.1" 200 2051
+[26/Jan/2023 21:17:32] "GET /static/import_export/guess_format.js HTTP/1.1" 200 711
+[26/Jan/2023 21:17:32] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 21:17:32] "GET /static/admin/css/widgets.css HTTP/1.1" 200 11297
+[26/Jan/2023 21:17:38] "GET /admin HTTP/1.1" 301 0
+[26/Jan/2023 21:17:38] "GET /admin/ HTTP/1.1" 302 0
+[26/Jan/2023 21:17:38] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 2215
+[26/Jan/2023 21:17:38] "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 796
+[26/Jan/2023 21:17:38] "GET /static/admin/css/login.css HTTP/1.1" 200 958
+[26/Jan/2023 21:17:38] "GET /static/admin/css/responsive.css HTTP/1.1" 200 18854
+[26/Jan/2023 21:17:38] "GET /static/admin/css/base.css HTTP/1.1" 200 20344
+[26/Jan/2023 21:17:38] "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3763
+[26/Jan/2023 21:17:38] "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2619
+[26/Jan/2023 21:17:38] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[26/Jan/2023 21:17:38] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+Not Found: /favicon.ico
+[26/Jan/2023 21:17:38] "GET /favicon.ico HTTP/1.1" 404 2221
+[26/Jan/2023 21:17:38] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+[26/Jan/2023 21:17:51,772] - Broken pipe from ('104.244.227.101', 12039)
+[26/Jan/2023 21:17:51,772] - Broken pipe from ('104.244.227.101', 52592)
+[26/Jan/2023 21:17:51,779] - Broken pipe from ('104.244.227.101', 52588)
+[26/Jan/2023 21:17:51,783] - Broken pipe from ('104.244.227.101', 12041)
+[26/Jan/2023 21:17:51,784] - Broken pipe from ('104.244.227.101', 52590)
+[26/Jan/2023 21:17:51,784] - Broken pipe from ('104.244.227.101', 52587)
+[26/Jan/2023 21:18:30] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+[26/Jan/2023 21:18:33] "POST /admin/login/?next=/admin/ HTTP/1.1" 200 2383
+[26/Jan/2023 21:18:50] "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[26/Jan/2023 21:18:50] "GET /admin/ HTTP/1.1" 200 6560
+[26/Jan/2023 21:18:50] "GET /static/admin/css/dashboard.css HTTP/1.1" 200 380
+[26/Jan/2023 21:18:50] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[26/Jan/2023 21:18:50] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[26/Jan/2023 21:19:10] "GET /admin/auth/group/ HTTP/1.1" 200 8323
+[26/Jan/2023 21:19:10] "GET /static/admin/css/changelists.css HTTP/1.1" 200 6395
+[26/Jan/2023 21:19:10] "GET /static/admin/js/core.js HTTP/1.1" 200 5698
+[26/Jan/2023 21:19:10] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 8985
+[26/Jan/2023 21:19:10] "GET /static/admin/js/actions.js HTTP/1.1" 200 7872
+[26/Jan/2023 21:19:10] "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+[26/Jan/2023 21:19:10] "GET /static/admin/js/filters.js HTTP/1.1" 200 966
+[26/Jan/2023 21:19:10] "GET /static/admin/js/urlify.js HTTP/1.1" 200 7902
+[26/Jan/2023 21:19:11] "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+[26/Jan/2023 21:19:11] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+[26/Jan/2023 21:19:11] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 21:19:11] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 288580
+[26/Jan/2023 21:19:11] "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+[26/Jan/2023 21:19:11] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+[26/Jan/2023 21:19:15] "GET /admin/auth/group/1/change/ HTTP/1.1" 200 12660
+[26/Jan/2023 21:19:15] "GET /static/admin/js/SelectFilter2.js HTTP/1.1" 200 11317
+[26/Jan/2023 21:19:15] "GET /static/admin/js/SelectBox.js HTTP/1.1" 200 4360
+[26/Jan/2023 21:19:15] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+[26/Jan/2023 21:19:16] "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+[26/Jan/2023 21:19:16] "GET /static/admin/css/forms.css HTTP/1.1" 200 8944
+[26/Jan/2023 21:19:16] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 21:19:16] "GET /static/admin/css/widgets.css HTTP/1.1" 200 11297
+[26/Jan/2023 21:19:16] "GET /static/admin/img/selector-icons.svg HTTP/1.1" 200 3291
+[26/Jan/2023 21:19:36] "GET /admin/token_blacklist/blacklistedtoken/ HTTP/1.1" 200 7282
+[26/Jan/2023 21:19:36] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 21:19:45,446] - Broken pipe from ('104.244.227.101', 52598)
+[26/Jan/2023 21:19:45,447] - Broken pipe from ('104.244.227.101', 12045)
+[26/Jan/2023 21:19:45,447] - Broken pipe from ('104.244.227.101', 52594)
+[26/Jan/2023 21:19:45,456] - Broken pipe from ('104.244.227.101', 12051)
+[26/Jan/2023 21:19:45,457] - Broken pipe from ('104.244.227.101', 52596)
+[26/Jan/2023 21:19:45,457] - Broken pipe from ('104.244.227.101', 12049)
+[26/Jan/2023 21:21:01] "GET /admin/base/address/ HTTP/1.1" 200 31091
+[26/Jan/2023 21:21:01] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 21:21:05] "GET /admin/ HTTP/1.1" 200 6560
+[26/Jan/2023 21:21:20] "GET /admin/base/address/ HTTP/1.1" 200 31091
+[26/Jan/2023 21:21:20] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 21:21:22] "GET /admin/base/address/import/ HTTP/1.1" 200 7293
+[26/Jan/2023 21:21:22] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 21:27:27] "POST /admin/base/address/import/ HTTP/1.1" 200 7346
+[26/Jan/2023 21:27:28] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 21:32:15] "GET /admin/auth/group/1/change/ HTTP/1.1" 200 12660
+[26/Jan/2023 21:32:15] "GET /static/admin/css/forms.css HTTP/1.1" 200 8944
+[26/Jan/2023 21:32:15] "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+[26/Jan/2023 21:32:15] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 21:32:15] "GET /static/admin/js/SelectBox.js HTTP/1.1" 200 4360
+[26/Jan/2023 21:32:15] "GET /static/admin/js/SelectFilter2.js HTTP/1.1" 200 11317
+[26/Jan/2023 21:32:15] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+[26/Jan/2023 21:32:16] "GET /static/admin/css/widgets.css HTTP/1.1" 200 11297
+[26/Jan/2023 21:32:16] "GET /static/admin/img/selector-icons.svg HTTP/1.1" 200 3291
+[26/Jan/2023 21:32:24] "GET /admin/base/parishe/ HTTP/1.1" 200 6849
+[26/Jan/2023 21:32:24] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 21:32:24] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+[26/Jan/2023 21:32:31,229] - Broken pipe from ('104.244.227.101', 12143)
+[26/Jan/2023 21:32:31,234] - Broken pipe from ('104.244.227.101', 12145)
+[26/Jan/2023 21:32:31,237] - Broken pipe from ('104.244.227.101', 52604)
+[26/Jan/2023 21:32:31,238] - Broken pipe from ('104.244.227.101', 52608)
+[26/Jan/2023 21:32:31,238] - Broken pipe from ('104.244.227.101', 12141)
+[26/Jan/2023 21:32:31,240] - Broken pipe from ('104.244.227.101', 52606)
+[26/Jan/2023 21:38:28] "POST /admin/base/address/process_import/ HTTP/1.1" 302 0
+[26/Jan/2023 21:38:28] "GET /admin/base/address/ HTTP/1.1" 200 31247
+[26/Jan/2023 21:38:29] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 21:38:29] "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+[26/Jan/2023 21:48:49] "GET /admin/ HTTP/1.1" 200 6560
+[26/Jan/2023 21:48:58] "GET /admin/base/address/ HTTP/1.1" 200 31091
+[26/Jan/2023 21:48:58] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 21:49:03] "POST /admin/base/address/ HTTP/1.1" 200 22372
+[26/Jan/2023 21:49:03] "GET /static/admin/js/cancel.js HTTP/1.1" 200 884
+[26/Jan/2023 21:49:06] "POST /admin/base/address/ HTTP/1.1" 302 0
+[26/Jan/2023 21:49:06] "GET /admin/base/address/ HTTP/1.1" 200 31231
+[26/Jan/2023 21:49:06] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 21:49:12] "POST /admin/base/address/ HTTP/1.1" 200 299852
+The number of GET/POST parameters exceeded settings.DATA_UPLOAD_MAX_NUMBER_FIELDS.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django/http/request.py", line 485, in __init__
+    for key, value in parse_qsl(query_string, **parse_qsl_kwargs):
+  File "/usr/lib/python3.10/urllib/parse.py", line 755, in parse_qsl
+    raise ValueError('Max number of fields exceeded')
+ValueError: Max number of fields exceeded
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.10/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = middleware_method(
+  File "/usr/local/lib/python3.10/dist-packages/django/middleware/csrf.py", line 471, in process_view
+    self._check_token(request)
+  File "/usr/local/lib/python3.10/dist-packages/django/middleware/csrf.py", line 374, in _check_token
+    request_csrf_token = request.POST.get("csrfmiddlewaretoken", "")
+  File "/usr/local/lib/python3.10/dist-packages/django/core/handlers/wsgi.py", line 100, in _get_post
+    self._load_post_and_files()
+  File "/usr/local/lib/python3.10/dist-packages/django/http/request.py", line 379, in _load_post_and_files
+    QueryDict(self.body, encoding=self._encoding),
+  File "/usr/local/lib/python3.10/dist-packages/django/http/request.py", line 492, in __init__
+    raise TooManyFieldsSent(
+django.core.exceptions.TooManyFieldsSent: The number of GET/POST parameters exceeded settings.DATA_UPLOAD_MAX_NUMBER_FIELDS.
+Bad Request: /admin/base/address/
+[26/Jan/2023 21:49:26] "POST /admin/base/address/ HTTP/1.1" 400 105518
+[26/Jan/2023 21:49:45] "GET /admin/base/address/ HTTP/1.1" 200 31091
+[26/Jan/2023 21:49:45] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 21:49:49] "POST /admin/base/address/ HTTP/1.1" 200 22372
+[26/Jan/2023 21:49:52] "POST /admin/base/address/ HTTP/1.1" 302 0
+[26/Jan/2023 21:49:53] "GET /admin/base/address/ HTTP/1.1" 200 31231
+[26/Jan/2023 21:49:53] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 21:49:56] "POST /admin/base/address/ HTTP/1.1" 200 22372
+[26/Jan/2023 21:49:59] "POST /admin/base/address/ HTTP/1.1" 302 0
+[26/Jan/2023 21:49:59] "GET /admin/base/address/ HTTP/1.1" 200 31231
+[26/Jan/2023 21:49:59] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 21:50:04] "POST /admin/base/address/ HTTP/1.1" 200 22372
+[26/Jan/2023 21:50:07] "POST /admin/base/address/ HTTP/1.1" 302 0
+[26/Jan/2023 21:50:08] "GET /admin/base/address/ HTTP/1.1" 200 31231
+[26/Jan/2023 21:50:08] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 21:50:11] "POST /admin/base/address/ HTTP/1.1" 200 22372
+[26/Jan/2023 21:50:13] "POST /admin/base/address/ HTTP/1.1" 302 0
+[26/Jan/2023 21:50:14] "GET /admin/base/address/ HTTP/1.1" 200 31231
+[26/Jan/2023 21:50:14] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 21:50:32] "POST /admin/base/address/ HTTP/1.1" 200 22372
+[26/Jan/2023 21:50:37] "POST /admin/base/address/ HTTP/1.1" 302 0
+[26/Jan/2023 21:50:37] "GET /admin/base/address/ HTTP/1.1" 200 31231
+[26/Jan/2023 21:50:38] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 21:50:45] "POST /admin/base/address/ HTTP/1.1" 200 221852
+The number of GET/POST parameters exceeded settings.DATA_UPLOAD_MAX_NUMBER_FIELDS.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django/http/request.py", line 485, in __init__
+    for key, value in parse_qsl(query_string, **parse_qsl_kwargs):
+  File "/usr/lib/python3.10/urllib/parse.py", line 755, in parse_qsl
+    raise ValueError('Max number of fields exceeded')
+ValueError: Max number of fields exceeded
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.10/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = middleware_method(
+  File "/usr/local/lib/python3.10/dist-packages/django/middleware/csrf.py", line 471, in process_view
+    self._check_token(request)
+  File "/usr/local/lib/python3.10/dist-packages/django/middleware/csrf.py", line 374, in _check_token
+    request_csrf_token = request.POST.get("csrfmiddlewaretoken", "")
+  File "/usr/local/lib/python3.10/dist-packages/django/core/handlers/wsgi.py", line 100, in _get_post
+    self._load_post_and_files()
+  File "/usr/local/lib/python3.10/dist-packages/django/http/request.py", line 379, in _load_post_and_files
+    QueryDict(self.body, encoding=self._encoding),
+  File "/usr/local/lib/python3.10/dist-packages/django/http/request.py", line 492, in __init__
+    raise TooManyFieldsSent(
+django.core.exceptions.TooManyFieldsSent: The number of GET/POST parameters exceeded settings.DATA_UPLOAD_MAX_NUMBER_FIELDS.
+Bad Request: /admin/base/address/
+[26/Jan/2023 21:50:48] "POST /admin/base/address/ HTTP/1.1" 400 105518
+[26/Jan/2023 21:51:01] "POST /admin/base/address/ HTTP/1.1" 200 22372
+[26/Jan/2023 21:51:04] "POST /admin/base/address/ HTTP/1.1" 302 0
+[26/Jan/2023 21:51:04] "GET /admin/base/address/ HTTP/1.1" 200 31231
+[26/Jan/2023 21:51:04] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 21:51:06] "POST /admin/base/address/ HTTP/1.1" 302 0
+[26/Jan/2023 21:51:07] "GET /admin/base/address/ HTTP/1.1" 200 31216
+[26/Jan/2023 21:51:07] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 21:51:07] "GET /static/admin/img/icon-alert.svg HTTP/1.1" 200 504
+[26/Jan/2023 21:51:10] "POST /admin/base/address/ HTTP/1.1" 200 22372
+[26/Jan/2023 21:51:13] "POST /admin/base/address/ HTTP/1.1" 302 0
+[26/Jan/2023 21:51:13] "GET /admin/base/address/ HTTP/1.1" 200 31231
+[26/Jan/2023 21:51:14] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 21:51:16] "POST /admin/base/address/ HTTP/1.1" 200 22372
+[26/Jan/2023 21:51:19] "POST /admin/base/address/ HTTP/1.1" 302 0
+[26/Jan/2023 21:51:19] "GET /admin/base/address/ HTTP/1.1" 200 31231
+[26/Jan/2023 21:51:19] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 21:51:26] "POST /admin/base/address/ HTTP/1.1" 200 22372
+[26/Jan/2023 21:51:29] "POST /admin/base/address/ HTTP/1.1" 302 0
+[26/Jan/2023 21:51:29] "GET /admin/base/address/ HTTP/1.1" 200 31030
+[26/Jan/2023 21:51:29] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 21:51:38] "POST /admin/base/address/ HTTP/1.1" 200 22075
+[26/Jan/2023 21:51:41] "POST /admin/base/address/ HTTP/1.1" 302 0
+[26/Jan/2023 21:51:42] "GET /admin/base/address/ HTTP/1.1" 200 30995
+[26/Jan/2023 21:51:42] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 21:51:46] "POST /admin/base/address/ HTTP/1.1" 200 22072
+[26/Jan/2023 21:51:50] "POST /admin/base/address/ HTTP/1.1" 302 0
+[26/Jan/2023 21:51:50] "GET /admin/base/address/ HTTP/1.1" 200 30968
+[26/Jan/2023 21:51:50] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 21:51:59] "POST /admin/base/address/ HTTP/1.1" 200 128848
+[26/Jan/2023 21:52:10] "POST /admin/base/address/ HTTP/1.1" 302 0
+[26/Jan/2023 21:52:10] "GET /admin/base/address/ HTTP/1.1" 200 7172
+[26/Jan/2023 21:52:10] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 21:52:36] "GET /admin/base/address/ HTTP/1.1" 200 7031
+[26/Jan/2023 21:52:36] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 21:52:38] "GET /admin/base/address/add/ HTTP/1.1" 200 12603
+[26/Jan/2023 21:52:39] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 21:52:39] "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+[26/Jan/2023 21:52:39] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+[26/Jan/2023 21:52:41] "GET /admin/base/address/ HTTP/1.1" 200 7031
+[26/Jan/2023 21:52:43] "GET /admin/base/address/import/ HTTP/1.1" 200 7292
+[26/Jan/2023 21:52:43] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 26, 2023 - 22:02:52
+Django version 4.1.5, using settings 'backend.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+[26/Jan/2023 22:02:53] "GET /admin/base/address/ HTTP/1.1" 200 7032
+[26/Jan/2023 22:02:53] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 22:03:22] "GET /admin/ HTTP/1.1" 200 6248
+[26/Jan/2023 22:03:24] "GET /admin/base/address/ HTTP/1.1" 200 7031
+[26/Jan/2023 22:03:24] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 22:03:26] "GET /admin/base/address/import/ HTTP/1.1" 200 7292
+[26/Jan/2023 22:03:26] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 22:11:56] "POST /admin/base/address/import/ HTTP/1.1" 200 7346
+[26/Jan/2023 22:11:56] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 22:20:35] "POST /admin/base/address/process_import/ HTTP/1.1" 302 0
+[26/Jan/2023 22:20:35] "GET /admin/base/address/ HTTP/1.1" 200 7188
+[26/Jan/2023 22:20:35] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 22:23:51] "GET /admin/base/address/ HTTP/1.1" 200 7031
+[26/Jan/2023 22:23:51] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 22:23:53] "GET /admin/base/address/ HTTP/1.1" 200 7031
+[26/Jan/2023 22:23:53] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 22:23:59] "GET /admin/base/address/import/ HTTP/1.1" 200 7292
+[26/Jan/2023 22:23:59] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 22:24:53] "POST /admin/base/address/import/ HTTP/1.1" 200 7354
+[26/Jan/2023 22:24:54] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 22:25:37] "POST /admin/base/address/process_import/ HTTP/1.1" 302 0
+[26/Jan/2023 22:25:37] "GET /admin/base/address/ HTTP/1.1" 200 7188
+[26/Jan/2023 22:25:38] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 22:26:36] "GET /admin/base/address/ HTTP/1.1" 200 7031
+[26/Jan/2023 22:26:36] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 22:28:35] "GET /admin/base/address/import/ HTTP/1.1" 200 7292
+[26/Jan/2023 22:28:35] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 22:28:54] "POST /admin/base/address/import/ HTTP/1.1" 200 7353
+[26/Jan/2023 22:28:54] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 22:29:02] "POST /admin/base/address/process_import/ HTTP/1.1" 302 0
+[26/Jan/2023 22:29:02] "GET /admin/base/address/ HTTP/1.1" 200 7188
+[26/Jan/2023 22:29:02] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 22:30:53] "GET /admin/ HTTP/1.1" 200 8833
+[26/Jan/2023 22:30:53] "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+[26/Jan/2023 22:30:53] "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+[26/Jan/2023 22:30:54] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[26/Jan/2023 22:30:54] "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+[26/Jan/2023 22:30:54] "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+[26/Jan/2023 22:30:54] "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+[26/Jan/2023 22:30:54] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[26/Jan/2023 22:30:54] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+[26/Jan/2023 22:30:54] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+[26/Jan/2023 22:30:54] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[26/Jan/2023 22:30:54] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[26/Jan/2023 22:30:54] "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+[26/Jan/2023 22:30:54] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[26/Jan/2023 22:30:57] "GET /admin/base/address/ HTTP/1.1" 200 7032
+[26/Jan/2023 22:30:57] "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+[26/Jan/2023 22:30:57] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 22:30:57] "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+[26/Jan/2023 22:30:57] "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+[26/Jan/2023 22:30:57] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[26/Jan/2023 22:30:57] "GET /static/admin/js/core.js HTTP/1.1" 304 0
+[26/Jan/2023 22:30:58] "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+[26/Jan/2023 22:30:58] "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+[26/Jan/2023 22:30:58] "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+[26/Jan/2023 22:30:58] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[26/Jan/2023 22:30:58] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+[26/Jan/2023 22:30:58] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+[26/Jan/2023 22:31:51] "GET /admin/base/address/import/ HTTP/1.1" 200 7293
+[26/Jan/2023 22:31:51] "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+[26/Jan/2023 22:31:51] "GET /static/import_export/import.css HTTP/1.1" 304 0
+[26/Jan/2023 22:31:51] "GET /static/import_export/guess_format.js HTTP/1.1" 304 0
+[26/Jan/2023 22:31:51] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 22:31:51] "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+[26/Jan/2023 22:32:07] "POST /admin/base/address/import/ HTTP/1.1" 200 7354
+[26/Jan/2023 22:32:07] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 22:35:14] "GET /admin/base/address/ HTTP/1.1" 200 7032
+[26/Jan/2023 22:35:14] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 22:35:15] "GET /admin/base/address/import/ HTTP/1.1" 200 7293
+[26/Jan/2023 22:35:15] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 22:35:25] "POST /admin/base/address/import/ HTTP/1.1" 200 7354
+[26/Jan/2023 22:35:25] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 22:35:32] "POST /admin/base/address/process_import/ HTTP/1.1" 302 0
+[26/Jan/2023 22:35:32] "GET /admin/base/address/ HTTP/1.1" 200 7189
+[26/Jan/2023 22:35:33] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 22:35:42] "GET /admin/base/address/import/ HTTP/1.1" 200 7293
+[26/Jan/2023 22:35:42] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 22:35:48] "POST /admin/base/address/import/ HTTP/1.1" 200 7354
+[26/Jan/2023 22:35:48] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 22:36:04] "GET /admin/base/address/ HTTP/1.1" 200 7032
+[26/Jan/2023 22:36:04] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 22:36:05] "GET /admin/base/address/import/ HTTP/1.1" 200 7293
+[26/Jan/2023 22:36:05] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 22:36:18] "POST /admin/base/address/import/ HTTP/1.1" 200 7353
+[26/Jan/2023 22:36:18] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 22:36:21] "POST /admin/base/address/process_import/ HTTP/1.1" 302 0
+[26/Jan/2023 22:36:21] "GET /admin/base/address/ HTTP/1.1" 200 7189
+[26/Jan/2023 22:36:21] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 22:37:27] "GET /admin/base/address/ HTTP/1.1" 200 7032
+[26/Jan/2023 22:37:27] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 22:37:29] "GET /admin/base/address/import/ HTTP/1.1" 200 7293
+[26/Jan/2023 22:37:29] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 22:37:40] "POST /admin/base/address/import/ HTTP/1.1" 200 8407
+[26/Jan/2023 22:37:40] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 22:38:14] "GET /admin/base/address/ HTTP/1.1" 200 7032
+[26/Jan/2023 22:38:14] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 22:38:15] "GET /admin/base/address/import/ HTTP/1.1" 200 7293
+[26/Jan/2023 22:38:15] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 22:38:23] "POST /admin/base/address/import/ HTTP/1.1" 200 22108
+[26/Jan/2023 22:38:23] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 22:39:04] "GET /admin/base/address/ HTTP/1.1" 200 7032
+[26/Jan/2023 22:39:04] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 22:39:06] "GET /admin/base/address/import/ HTTP/1.1" 200 7293
+[26/Jan/2023 22:39:06] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 22:39:17] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 22:39:17] "POST /admin/base/address/import/ HTTP/1.1" 200 2334061
+[26/Jan/2023 22:40:27] "GET /admin/base/address/ HTTP/1.1" 200 7032
+[26/Jan/2023 22:40:27] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 22:40:28] "GET /admin/base/address/import/ HTTP/1.1" 200 7293
+[26/Jan/2023 22:40:29] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 22:40:41] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 22:40:41] "POST /admin/base/address/import/ HTTP/1.1" 200 7243121
+[26/Jan/2023 22:41:32] "GET /admin/base/address/ HTTP/1.1" 200 7032
+[26/Jan/2023 22:41:32] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 22:41:34] "GET /admin/base/address/import/ HTTP/1.1" 200 7293
+[26/Jan/2023 22:41:34] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 22:41:47] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 22:41:47] "POST /admin/base/address/import/ HTTP/1.1" 200 7243121
+[26/Jan/2023 22:43:15] "GET /admin/base/address/ HTTP/1.1" 200 7032
+[26/Jan/2023 22:43:15] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 22:43:21] "GET /admin/base/address/import/ HTTP/1.1" 200 7293
+[26/Jan/2023 22:43:21] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 22:43:56] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 22:43:56] "POST /admin/base/address/import/ HTTP/1.1" 200 2334061
+[26/Jan/2023 22:45:19] "GET /admin/base/address/ HTTP/1.1" 200 7032
+[26/Jan/2023 22:45:19] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 22:45:48] "GET /admin/base/address/ HTTP/1.1" 200 7032
+[26/Jan/2023 22:45:48] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 22:45:50] "GET /admin/base/address/ HTTP/1.1" 200 7032
+[26/Jan/2023 22:45:50] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 22:48:49] "GET /admin/base/address/ HTTP/1.1" 200 7032
+[26/Jan/2023 22:48:49] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 22:48:51] "GET /admin/base/address/add/ HTTP/1.1" 200 12604
+[26/Jan/2023 22:48:51] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 22:48:51] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+[26/Jan/2023 22:48:52] "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+[26/Jan/2023 22:50:22] "GET /admin/base/address/ HTTP/1.1" 200 7032
+[26/Jan/2023 22:50:22] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 22:50:24] "GET /admin/base/address/import/ HTTP/1.1" 200 7293
+[26/Jan/2023 22:50:24] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 22:50:43] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 22:50:43] "POST /admin/base/address/import/ HTTP/1.1" 200 2194762
+[26/Jan/2023 22:52:54] "GET /admin/base/address/ HTTP/1.1" 200 7031
+[26/Jan/2023 22:52:54] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[26/Jan/2023 22:52:54] "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+[26/Jan/2023 22:52:54] "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+[26/Jan/2023 22:52:54] "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+[26/Jan/2023 22:52:54] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 22:52:54] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[26/Jan/2023 22:52:54] "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+[26/Jan/2023 22:52:54] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[26/Jan/2023 22:52:54] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+[26/Jan/2023 22:52:54] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[26/Jan/2023 22:52:54] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[26/Jan/2023 22:53:05] "GET /admin/base/address/import/ HTTP/1.1" 200 7292
+[26/Jan/2023 22:53:05] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 22:54:51] "GET /admin/base/address/ HTTP/1.1" 200 7032
+[26/Jan/2023 22:54:52] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 22:55:07] "GET /admin/base/address/import/ HTTP/1.1" 200 7293
+[26/Jan/2023 22:55:07] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 26, 2023 - 23:07:14
+Django version 4.1.5, using settings 'backend.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 26, 2023 - 23:07:48
+Django version 4.1.5, using settings 'backend.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Error: That port is already in use.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 26, 2023 - 23:08:00
+Django version 4.1.5, using settings 'backend.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Error: That port is already in use.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 26, 2023 - 23:08:16
+Django version 4.1.5, using settings 'backend.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Error: That port is already in use.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 26, 2023 - 23:09:36
+Django version 4.1.5, using settings 'backend.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 26, 2023 - 23:11:19
+Django version 4.1.5, using settings 'backend.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 26, 2023 - 23:11:30
+Django version 4.1.5, using settings 'backend.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+[26/Jan/2023 23:11:31] "GET /admin/base/address/ HTTP/1.1" 200 7032
+[26/Jan/2023 23:11:31] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 23:11:47] "GET /admin/ HTTP/1.1" 200 6248
+[26/Jan/2023 23:11:47] "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+[26/Jan/2023 23:11:47] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+[26/Jan/2023 23:13:21] "GET /admin/base/address/ HTTP/1.1" 200 7031
+[26/Jan/2023 23:13:21] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 23:13:22] "GET /admin/base/address/import/ HTTP/1.1" 200 7292
+[26/Jan/2023 23:13:22] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 23:16:20] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 23:17:26] "GET /admin/base/address/import/ HTTP/1.1" 200 7292
+[26/Jan/2023 23:17:34] "GET /admin/base/address/ HTTP/1.1" 200 7031
+[26/Jan/2023 23:18:26] "GET /admin/base/address/import/ HTTP/1.1" 200 7292
+[26/Jan/2023 23:18:27] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 26, 2023 - 23:24:25
+Django version 4.1.5, using settings 'backend.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+[26/Jan/2023 23:24:26] "GET /admin/base/address/ HTTP/1.1" 200 7032
+[26/Jan/2023 23:24:26] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 23:24:34] "GET /admin/ HTTP/1.1" 200 6248
+[26/Jan/2023 23:24:36] "GET /admin/base/address/ HTTP/1.1" 200 7031
+[26/Jan/2023 23:24:37] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 23:24:38] "GET /admin/base/address/import/ HTTP/1.1" 200 7292
+[26/Jan/2023 23:24:38] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 23:26:57] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 23:27:18] "POST /admin/base/address/import/ HTTP/1.1" 200 57538333
+[26/Jan/2023 23:28:54] "GET /admin/base/address/ HTTP/1.1" 200 7032
+[26/Jan/2023 23:28:54] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+Internal Server Error: /admin/base/address/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django/contrib/sessions/backends/base.py", line 187, in _get_session
+    return self._session_cache
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python3.10/dist-packages/django/db/backends/sqlite3/base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: database is locked
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.10/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/django/contrib/admin/options.py", line 686, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/django/views/decorators/cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/django/contrib/admin/sites.py", line 230, in inner
+    if not self.has_permission(request):
+  File "/usr/local/lib/python3.10/dist-packages/django/contrib/admin/sites.py", line 203, in has_permission
+    return request.user.is_active and request.user.is_staff
+  File "/usr/local/lib/python3.10/dist-packages/django/utils/functional.py", line 266, in inner
+    self._setup()
+  File "/usr/local/lib/python3.10/dist-packages/django/utils/functional.py", line 419, in _setup
+    self._wrapped = self._setupfunc()
+  File "/usr/local/lib/python3.10/dist-packages/django/contrib/auth/middleware.py", line 25, in <lambda>
+    request.user = SimpleLazyObject(lambda: get_user(request))
+  File "/usr/local/lib/python3.10/dist-packages/django/contrib/auth/middleware.py", line 11, in get_user
+    request._cached_user = auth.get_user(request)
+  File "/usr/local/lib/python3.10/dist-packages/django/contrib/auth/__init__.py", line 191, in get_user
+    user_id = _get_user_session_key(request)
+  File "/usr/local/lib/python3.10/dist-packages/django/contrib/auth/__init__.py", line 60, in _get_user_session_key
+    return get_user_model()._meta.pk.to_python(request.session[SESSION_KEY])
+  File "/usr/local/lib/python3.10/dist-packages/django/contrib/sessions/backends/base.py", line 53, in __getitem__
+    return self._session[key]
+  File "/usr/local/lib/python3.10/dist-packages/django/contrib/sessions/backends/base.py", line 192, in _get_session
+    self._session_cache = self.load()
+  File "/usr/local/lib/python3.10/dist-packages/django/contrib/sessions/backends/db.py", line 42, in load
+    s = self._get_session_from_db()
+  File "/usr/local/lib/python3.10/dist-packages/django/contrib/sessions/backends/db.py", line 32, in _get_session_from_db
+    return self.model.objects.get(
+  File "/usr/local/lib/python3.10/dist-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/django/db/models/query.py", line 646, in get
+    num = len(clone)
+  File "/usr/local/lib/python3.10/dist-packages/django/db/models/query.py", line 376, in __len__
+    self._fetch_all()
+  File "/usr/local/lib/python3.10/dist-packages/django/db/models/query.py", line 1867, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/usr/local/lib/python3.10/dist-packages/django/db/models/query.py", line 87, in __iter__
+    results = compiler.execute_sql(
+  File "/usr/local/lib/python3.10/dist-packages/django/db/models/sql/compiler.py", line 1398, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/lib/python3.10/dist-packages/django/db/backends/utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "/usr/local/lib/python3.10/dist-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/usr/local/lib/python3.10/dist-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/usr/local/lib/python3.10/dist-packages/django/db/backends/utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "/usr/local/lib/python3.10/dist-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.10/dist-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python3.10/dist-packages/django/db/backends/sqlite3/base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: database is locked
+[26/Jan/2023 23:33:13] "GET /admin/base/address/ HTTP/1.1" 200 31401
+[26/Jan/2023 23:33:16] "GET /admin/base/address/ HTTP/1.1" 200 31401
+[26/Jan/2023 23:33:16] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 23:33:57] "GET /admin/base/address/ HTTP/1.1" 200 31400
+[26/Jan/2023 23:34:00] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[26/Jan/2023 23:34:07] "GET /admin/base/address/634960/change/ HTTP/1.1" 200 13071
+[26/Jan/2023 23:34:07] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+Internal Server Error: /api/cleanse/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.10/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.10/dist-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.10/dist-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.10/dist-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/home/address_cleanser_django/jamnav-proto/backend/base/api/views.py", line 61, in cleanse
+    address=req_info['address']
+KeyError: 'address'
+[26/Jan/2023 23:35:16] "POST /api/cleanse/ HTTP/1.1" 500 91557
+{'address': ' 26 Hazard Dr', 'parish': 'Clarendon'}
+[26/Jan/2023 23:35:30] "POST /api/cleanse/ HTTP/1.1" 200 367
+{'address': ' 26 Hazard Dr', 'parish': 'Clarendon'}
+[26/Jan/2023 23:35:42] "POST /api/cleanse/ HTTP/1.1" 200 367
+{'address': '26 Hazard Dr', 'parish': 'Clarendon'}
+[26/Jan/2023 23:37:15] "POST /api/cleanse/ HTTP/1.1" 200 380
+[26/Jan/2023 23:39:13] "POST /admin/base/address/process_import/ HTTP/1.1" 302 0
+{'address': '17 Angler ', 'parish': 'St. Catherine'}
+[26/Jan/2023 23:39:21] "POST /api/cleanse/ HTTP/1.1" 200 103
+{'address': '17 Angler', 'parish': 'St. Catherine'}
+[26/Jan/2023 23:39:34] "POST /api/cleanse/ HTTP/1.1" 200 102
+{'address': '17 Angler C', 'parish': 'St. Catherine'}
+[26/Jan/2023 23:39:48] "POST /api/cleanse/ HTTP/1.1" 200 107
+{'address': '17 Angler CLSE', 'parish': 'St. Catherine'}
+[26/Jan/2023 23:39:59] "POST /api/cleanse/ HTTP/1.1" 200 363
+[26/Jan/2023 23:41:10] "GET /admin/base/address/634960/change/ HTTP/1.1" 200 13071
+[26/Jan/2023 23:41:10] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
