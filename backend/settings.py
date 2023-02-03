@@ -139,8 +139,8 @@ WSGI_APPLICATION = 'backend.wsgi.application'
         }
     }
 '''
-if DEVELOPMENT_MODE is True:
-    DATABASES = {
+
+DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.postgresql_psycopg2',
             'NAME': 'cleanserdb', 
@@ -149,12 +149,6 @@ if DEVELOPMENT_MODE is True:
             'HOST': 'localhost', 
             'PORT': '5432',
         }
-    }
-elif len(sys.argv) > 0 and sys.argv[1] != 'collectstatic':
-    if os.getenv("DATABASE_URL", None) is None:
-        raise Exception("DATABASE_URL environment variable not defined")
-    DATABASES = {
-        "default": dj_database_url.parse(os.environ.get("DATABASE_URL")),
     }
     
 
