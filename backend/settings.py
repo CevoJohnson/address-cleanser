@@ -14,6 +14,8 @@ from pathlib import Path
 from datetime import timedelta
 import os
 import sys
+import dj_database_url
+
 # import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -137,16 +139,25 @@ WSGI_APPLICATION = 'backend.wsgi.application'
         }
     }
 '''
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'cleanserdb', 
-        'USER': 'postgres', 
-        'PASSWORD': 'trublue12',
-        'HOST': 'localhost', 
-        'PORT': '5432',
+if DEVELOPMENT_MODE is True:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql_psycopg2',
+            'NAME': 'cleanserdb', 
+            'USER': 'postgres', 
+            'PASSWORD': 'trublue12',
+            'HOST': 'localhost', 
+            'PORT': '5432',
+        }
     }
-}
+elif len(sys.argv) > 0 and sys.argv[1] != 'collectstatic':
+    if os.getenv("DATABASE_URL", None) is None:
+        raise Exception("DATABASE_URL environment variable not defined")
+    DATABASES = {
+        "default": dj_database_url.parse(os.environ.get("DATABASE_URL")),
+    }
+    
+
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
